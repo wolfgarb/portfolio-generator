@@ -1,10 +1,11 @@
-const profDataArgs = process.argv.slice(2, process.argv.length);
+const fs = require('fs');
+const generatePage = require('./src/page-template.js');
+const profDataArgs = process.argv.slice(2);
+const [name, github] = profDataArgs;
 
-const printProfData = profileDataArr => {
+fs.writeFile('index.html', generatePage(name, github), err => {
+    if (err) throw new Error(err);
 
-    profileDataArr.forEach(profileItem => console.log(profileItem));
-}       
-// dividing line that will be output before the user input is turned into output
-console.log('================');
+    console.log('Portfolio complete!');
+})
 
-printProfData(profDataArgs);
