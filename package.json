@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/wolfgarb/portfolio-generator/issues"
   },
-  "homepage": "https://github.com/wolfgarb/portfolio-generator#readme"
+  "homepage": "https://github.com/wolfgarb/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
