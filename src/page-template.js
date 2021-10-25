@@ -1,10 +1,3 @@
-const generatePage = (mockData) => {
-
-    return `
-
-    `;
-}
-
 // conditionally create about section IF it exists
 const genAbout = aboutText => {
   if (!aboutText) {
